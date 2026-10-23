@@ -1,0 +1,10 @@
+fastapi>=0.115
+uvicorn[standard]>=0.34
+pyjwt>=2.9
+networkx>=3.4
+sqlite-utils>=3.37
+pydantic>=2.9
+yaml>=0.2
+python-dotenv>=1.0
+requests>=2.32
+flask>=3.0

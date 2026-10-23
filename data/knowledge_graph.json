@@ -1,0 +1,1 @@
+{"nodes": [{"id": "trial_001", "props": {"phase": "III", "status": "active", "entity_label": "Clinical Trial"}}, {"id": "compound_A", "props": {"name": "Compound A", "target": "PD-1", "entity_label": "Compound"}}], "edges": [{"source": "trial_001", "target": "compound_A", "props": {"relation": "tests", "duration_days": 730}}]}

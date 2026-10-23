@@ -1,0 +1,41 @@
+
+# AIPD Backend Default Configuration
+backend:
+  host: 0.0.0.0
+  port: 8080
+  debug: true
+
+database:
+  path: data/aipd.db
+  max_connections: 10
+
+auth:
+  secret_key: "aipd-dev-secret-change-in-prod"
+  token_expiry_hours: 24
+  oauth_providers: ["google", "github", "stripe"]
+
+orchestration:
+  max_workers: 10
+  retry_attempts: 3
+  retry_delay_seconds: 5
+  timeout_seconds: 180
+
+intelligence:
+  reasoning_depth: 3
+  context_window_size: 4096
+  cache_ttl_seconds: 300
+
+models:
+  default_provider: "local"
+  registry_path: "data/models.json"
+
+knowledge:
+  graph_cache_path: "data/knowledge_graph.json"
+
+boundaries:
+  isolation_level: "project"
+  audit_all_crossings: true
+
+audit:
+  log_path: "logs/audit.log"
+  version_table: "versions"
