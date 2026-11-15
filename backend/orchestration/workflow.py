@@ -1,5 +1,6 @@
 
 import json
+from typing import Dict
 class WorkflowEngine:
     def __init__(self, db, router):
         self.db = db
